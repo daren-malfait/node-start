@@ -1,0 +1,50 @@
+{
+  "name": "node-start",
+  "version": "0.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "keywords": [],
+  "author": "Daren Malfait <me@daren.be> (https://daren.be)",
+  "license": "MIT",
+  "engines": {
+    "node": ">=10",
+    "npm": ">=6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/daren-malfait/node-start"
+  },
+  "bugs": {
+    "url": "https://github.com/daren-malfait/node-start/issues"
+  },
+  "homepage": "https://github.com/daren-malfait/node-start#readme",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc --outDir dist",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx .",
+    "lint:fix": "eslint --ext .js,.jsx,.ts,.tsx . --fix",
+    "validate": "npm run build --silent && npm run lint --silent && npm run typecheck --silent"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.15.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.0",
+    "@babel/eslint-parser": "^7.15.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.32.0",
+    "eslint-config-daren": "^1.2.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-babel": "^5.3.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.25.1",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "typescript": "^4.4.2"
+  }
+}
